@@ -23,25 +23,25 @@ import (
 
 
 type Tripdata struct {
-   Id bson.ObjectId      `json:"id" bson:"_id"`
+   Id bson.ObjectId      `           json:"id" bson:"_id"`
    Status string         `json:"status" bson:"status"`
-   Starting_from_location_id string   `json:"starting_from_location_id" bson:"starting_from_location_id"`
+   Starting_from_location_id string       `json:"starting_from_location_id" bson:"starting_from_location_id"`
    Best_route_location_ids []string   `json:"best_route_location_ids" bson:"best_route_location_ids"`
-   Total_uber_costs int     `json:"total_uber_cost" bson:"total_uber_cost"`
-   Total_uber_duration int  `json:"total_uber_duration" bson:"total_uber_duration"`
+   Total_uber_costs int     `           json:"total_uber_cost" bson:"total_uber_cost"`
+   Total_uber_duration int    `json:"total_uber_duration" bson:"total_uber_duration"`
    Total_distance float64   `json:"total_distance" bson:"total_distance"` 
 }
 
 type Tripstatus struct {
     
-    Id bson.ObjectId     `json:"id" bson:"_id"`
+    Id bson.ObjectId            `json:"id" bson:"_id"`
     Status string        `json:"status" bson:"status"`
-    Starting_from_location_id string      `json:"starting_from_location_id" bson:"starting_from_location_id"`
+    Starting_from_location_id string            `json:"starting_from_location_id" bson:"starting_from_location_id"`
     Next_destination_location_id string   `json:"next_destination_location_id" bson:"next_destination_location_id"`
-    Best_route_location_ids []string      `json:"best_route_location_ids" bson:"best_route_location_ids"`
-    Total_uber_costs int                  `json:"total_uber_cost" bson:"total_uber_cost"`
-    Total_uber_duration int  `json:"total_uber_duration" bson:"total_uber_duration"`
-    Total_distance float64   `json:"total_distance" bson:"total_distance"` 
+    Best_route_location_ids []string         `json:"best_route_location_ids" bson:"best_route_location_ids"`
+    Total_uber_costs int        `json:"total_uber_cost" bson:"total_uber_cost"`
+    Total_uber_duration int         `json:"total_uber_duration" bson:"total_uber_duration"`
+    Total_distance float64          `json:"total_distance" bson:"total_distance"` 
     Uber_wait_time_eta int   `json:"uber_wait_time_eta" bson:"uber_wait_time_eta"`
 }
 
